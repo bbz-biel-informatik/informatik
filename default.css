@@ -33,6 +33,12 @@
 		padding: 0;
 		list-style: none;
 	}
+
+	#welcome ol, #welcome ul, #featured ol, #featured ul {
+		list-style-type: disc;
+		text-align: left;
+		margin-left: 24px;
+	}
 	
 	p
 	{
@@ -364,7 +370,7 @@
 	
 	.title h2
 	{
-		text-transform: lowercase;
+		/*text-transform: lowercase;*/
 		font-size: 2.8em;
 	}
 	
