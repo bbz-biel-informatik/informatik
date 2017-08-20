@@ -1,0 +1,166 @@
+{
+  "topics": [
+    {
+      "id": "01_zahlensysteme_umwandeln",
+      "description": "Zahlensysteme - Umwandlung",
+      "questions": [
+        {
+          "text": "110111 (2)",
+          "answers": [
+            {
+              "label": "(16)",
+              "solution": "37"
+            },
+            {
+              "label": "(10)",
+              "solution": "55"
+            }
+          ]
+        },
+        {
+          "text": "11001010 (2)",
+          "answers": [
+            {
+              "label": "(16)",
+              "solution": "CA"
+            },
+            {
+              "label": "(10)",
+              "solution": "202"
+            }
+          ]
+        },
+        {
+          "text": "755 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1011110011"
+            },
+            {
+              "label": "(16)",
+              "solution": "2F3"
+            }
+          ]
+        },
+        {
+          "text": "241 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "11110001"
+            },
+            {
+              "label": "(16)",
+              "solution": "F1"
+            }
+          ]
+        },
+        {
+          "text": "A9C (16)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "101010011100"
+            },
+            {
+              "label": "(10)",
+              "solution": "2716"
+            }
+          ]
+        },
+        {
+          "text": "190 (16)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "110010000"
+            },
+            {
+              "label": "(10)",
+              "solution": "400"
+            }
+          ]
+        },
+        {
+          "text": "101011 (2)",
+          "answers": [
+            {
+              "label": "(16)",
+              "solution": "43"
+            },
+            {
+              "label": "(10)",
+              "solution": "3B"
+            }
+          ]
+        },
+        {
+          "text": "11010110 (2)",
+          "answers": [
+            {
+              "label": "(16)",
+              "solution": "214"
+            },
+            {
+              "label": "(10)",
+              "solution": "D6"
+            }
+          ]
+        },
+        {
+          "text": "615 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1001100111"
+            },
+            {
+              "label": "(16)",
+              "solution": "267"
+            }
+          ]
+        },
+        {
+          "text": "194 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "11000010"
+            },
+            {
+              "label": "(16)",
+              "solution": "C2"
+            }
+          ]
+        },
+        {
+          "text": "C9E (16)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "110010011110"
+            },
+            {
+              "label": "(10)",
+              "solution": "3230"
+            }
+          ]
+        },
+        {
+          "text": "157 (16)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "101010111"
+            },
+            {
+              "label": "(16)",
+              "solution": "343"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

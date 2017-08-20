@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 24px;
+    }
+
+    .question-list {
+      margin-top: 48px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    .question {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      border-spacing: 12px;
+    }
+
+    .question>* {
+      display: table-cell;
+    }
+
+    .question-text {
+      font-weight: 700;
+      width: 25%;
+    }
+
+    .answer {
+      margin-left: 12px;
+    }
+
+    .answer-input {
+      height: 18px;
+    }
+
+    .answer-input.correct {
+      border: 2px solid green;
+    }
+
+    .answer-input.wrong {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 class="topic-title"></h3>
+  <div class="question-list">
+
+  </div>
+
+
+  <script>
+    $(function () {
+      var hash = window.location.hash.replace('#', '');
+
+      var EXERCISES_URL = hash + '.json';
+      var $elem_topic_title = $('.topic-title');
+      var $elem_question_list = $('.question-list');
+
+      var $clearfix = $('<div style="clear: both">&nbsp;</div>');
+
+
+      $.getJSON(EXERCISES_URL, function (data) {
+        $.each(data.topics, function (i, topic) {
+          if (topic.id === hash) {
+            $elem_topic_title.text(topic.description);
+            var questions = topic.questions;
+            $.each(questions, function (j, question) {
+              var $question = $('<div class="question"></div>');
+
+              var topic_id = topic.id;
+
+              var $text = $('<div class="question-text">' + question.text + '</div>');
+              $question.append($text);
+
+              $.each(question.answers, function (k, answer) {
+                var answer_label = answer.label;
+                var solution = answer.solution;
+
+                var key = topic.id + '_' + question.text + '_' + k;
+
+                var $answer = $('<div class="answer"></div>');
+
+                var $answer_label = $('<div class="answer-label">' + answer_label + '</div>');
+                var $answer_input = $('<input class="answer-input" type="text"></input>');
+                var $answer_button = $('<button class="answer-button">?</button>');
+
+                console.log('< ' + key);
+
+                var prev_answer = localStorage.getItem(key);
+                if (prev_answer) {
+                  $answer_input.val(prev_answer);
+                  check_answer($answer_input, solution, key);
+                }
+
+                $answer_button.click(function () {
+                  check_answer($answer_input, solution, key);
+                });
+
+                $answer.append($answer_label);
+                $answer.append($answer_input);
+                $answer.append($answer_button);
+
+                $question.append($answer);
+              });
+
+              $elem_question_list.append($question);
+            });
+          }
+        });
+      });
+    });
+
+    function check_answer($answer_input, solution, key) {
+      var input_val = $answer_input.val();
+
+      console.log('> ' + key);
+      localStorage.setItem(key, input_val);
+
+      if (input_val.replace(' ', '') === solution) {
+        $answer_input.removeClass('wrong');
+        $answer_input.addClass('correct');
+      } else {
+        $answer_input.removeClass('correct');
+        $answer_input.addClass('wrong');
+      }
+    }
+  </script>
+</body>
+
+</html>
