@@ -1,0 +1,118 @@
+{
+  "topics": [
+    {
+      "id": "02_zahlensysteme_rechnen",
+      "description": "Zahlensysteme - Rechnen",
+      "questions": [
+        {
+          "text": "10011011 + 110010",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "1111101"
+            }
+          ]
+        },
+        {
+          "text": "1011001 + 111010",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "10010011"
+            }
+          ]
+        },
+        {
+          "text": "111001 - 10011",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "100110"
+            }
+          ]
+        },
+        {
+          "text": "11010101 - 10011011",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "111010"
+            }
+          ]
+        },
+        {
+          "text": "100110 * 110",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "11100100"
+            }
+          ]
+        },
+        {
+          "text": "11010100 * 1011",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "100100011100"
+            }
+          ]
+        },
+        {
+          "text": "1010110 + 101011",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "10000001"
+            }
+          ]
+        },
+        {
+          "text": "1101101 + 101100",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "10011001"
+            }
+          ]
+        },
+        {
+          "text": "110010 - 10101",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "11101"
+            }
+          ]
+        },
+        {
+          "text": "11001101 - 10110101",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "11000"
+            }
+          ]
+        },
+        {
+          "text": "101010 * 101",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "11010010"
+            }
+          ]
+        },
+        {
+          "text": "11010010 * 1101",
+          "answers": [
+            {
+              "label": "Resultat",
+              "solution": "101010101010"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
