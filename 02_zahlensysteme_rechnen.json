@@ -5,7 +5,7 @@
       "description": "Zahlensysteme - Rechnen",
       "questions": [
         {
-          "text": "10011011 + 110010",
+          "text": "1001011 + 110010",
           "answers": [
             {
               "label": "Resultat",
