@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body>*,
+    img {
+      margin: 0px auto;
+      width: 50%;
+    }
+
+    p {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Logische Schaltungen</h3>
+  <p>
+    Computer-Prozessoren sind aus Millionen kleiner elektronischer Schaltungen aufgebaut. Jede Schaltung übernimmt eine eigene
+    Aufgabe, zum Beispiel das Laden eines Datenblocks aus dem Arbeitsspeicher oder die Addition von zwei Zahlen.</p>
+  <p>Computerprogramme werden dann in eine Serie von Anweisungen übersetzt, die direkt von der CPU elektronisch ausgewertet
+    werden. Da für jeden Befehl ein eigener Schaltkreis existieren muss, sind nur etwa 1000 verschiedene Befehle von der
+    CPU ausführbar. Und jede CPU kann leicht andere Befehle ausführen.</p>
+
+  <p>Jeder dieser Schaltkreise besteht im wesentlichen aus drei Bausteinen. Diese sind aber kombinierbar und so sind komplexe
+    Befehle abbildbar.</p>
+
+  <a href="gates.png"><img src="gates.png"></a>
+
+  <p>Die sogenannten Gatter sind kleine elektronische Schaltungen, die je nach Eingangssignalen ein anderes Ausgangssignal ausgeben.
+    Damit können beliebige logische Schaltungen gebildet werden. Logische Schaltungen sind Schaltkreise, die aus einem oder
+    mehreren Eingangssignalen ein oder mehrere Ausgangssignale bilden.</p>
+
+  <p>Die drei Gatter UND, ODER und NICHT reichen, um jede beliebige logische Schaltung zu bauen.</p>
+  <hr />
+  <h5>Beispiel</h5>
+  <p>Eine Schneidmaschine soll als Sicherheitsvorkehrung nur Schneiden, wenn der Operator zwei voneinander entfernte Knöpfe
+    betätigt. So wird sichergestellt, dass sich beide Hände ausserhalb der Gefahrenzone befinden.</p>
+
+  <hr />
+  <p>Diese Schaltungen können durch eine sogenannte boolesche Funktion beschrieben werden. Eine Formel bildet jeweils einen
+    oder mehrere Eingänge auf einen Ausgang ab.</p>
+
+  <h4>Aufgaben</h4>
+
+  <p>
+    Zeichne jeweils die Wahrheitstabelle und die Schaltung für die folgenden booleschen Funktionen.
+    <ul>
+      <li>Baue eine Treppenhausschaltung. Die Lampe am Ausgang soll nur brennen, wenn zwei Schalter in der gleichen Position
+        sind. Die Betätigung eines einzelnen Schalters soll die Lampe ausschalten</li>
+      <li>Baue eine Schaltung für eine Alarmanlage. Die Schaltung soll den Alarm auslösen, wenn die Alarmanlage aktiviert ist
+        (Eingang A), die Türe geschlossen ist (Eingang B) und entweder der Bewegungssensor im Raum (C) oder der Berührungsmelder
+        am Fenster (D) aktiviert wird.</li>
+      <li>Baue eine Schaltung, die die boolesche Funktion x(y + z) berechnet.</li>
+      <li>Baue eine Schaltung, die die boolesche Funktion xy + xz berechnet.</li>
+      <li>Baue eine Schaltung mit drei Eingängen, die nur 1 ausgibt, wenn alle Eingänge auf 1 stehen.</li>
+      <li>Baue eine Schaltung mit drei Eingängen, die nur 1 ausgibt, wenn alle Eingänge gleich sind.</li>
+      <li>Baue eine Schaltung mit drei Eingängen, die nur 1 ausgibt, wenn genau zwei Eingänge 1 sind.</li>
+      <li>Baue eine Schaltung mit drei Eingängen, die nur 1 ausgibt, wenn die Dezimal-Darstellung der Eingänge >= 4 ist</li>
+      <li>Baue eine Schaltung, die zwei 2-stellige Zahlen vergleicht und 1 ausgibt, falls beide gleich sind</li>
+      <li>Baue eine Schaltung, die zwei einstellige Binärzahlen addiert. Achtung: ein Ausgang für den Übertrag ist nötig</li>
+      <li>Baue eine Schaltung, die zwei zweistellige Binärzahlen addiert. Achtung: ein Ausgang für den Übertrag ist nötig</li>
+      <li>Baue eine Schaltung, die 2 Eingänge, eine Steuerung und 2 Ausgänge hat. Wenn an der Steuerung 1 anliegt, soll Eingang
+        A auf Ausgang A und Eingang B auf Ausgang B geleitet werden; sonst umgekehrt.</li>
+      <p>Melde dich für die Funktionsweise von NOR-Gattern</p>
+      <li>Baue eine NOT-Schaltung, indem du ein NOR-Gatter verwendest</li>
+      <li>Baue eine OR-Schaltung, indem du zwei NOR-Gatter verwendest</li>
+      <li>Baue eine AND-Schaltung, indem du drei NOR-Gatter verwendest</li>
+    </ul>
+  </p>
+
+  <h3>Vereinfachung von Schaltungen</h3>
+  <p><a href="http://www.kempx.ch/files/gibla/rechenregeln_bool.pdf">Rechenregeln</a></p>
+  <p><a href="https://de.wikipedia.org/wiki/De_Morgansche_Gesetze#Gesetze">De Morgansche Gesetze</a></p>
+
+  <h3>Aufgaben</h3>
+  <p>Vereinfache die folgenden booleschen Funktionen</p>
+  <ul>
+    <li>(A OR NOT (B AND A)) AND (C OR (D OR C))</li>
+  </ul>
+</body>
