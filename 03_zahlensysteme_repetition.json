@@ -1,0 +1,208 @@
+{
+  "topics": [
+    {
+      "id": "03_zahlensysteme_repetition",
+      "description": "Zahlensysteme - Repetition",
+      "questions": [
+        {
+          "text": "3FC (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "1020"
+            },
+            {
+              "label": "(2)",
+              "solution": "1111111100"
+            }
+          ]
+        },
+        {
+          "text": "123 (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "291"
+            },
+            {
+              "label": "(2)",
+              "solution": "100100011"
+            }
+          ]
+        },
+        {
+          "text": "AAA (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "2730"
+            },
+            {
+              "label": "(2)",
+              "solution": "101010101010"
+            }
+          ]
+        },
+        {
+          "text": "10010101 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "149"
+            },
+            {
+              "label": "(16)",
+              "solution": "95"
+            }
+          ]
+        },
+        {
+          "text": "110101101 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "429"
+            },
+            {
+              "label": "(16)",
+              "solution": "1AD"
+            }
+          ]
+        },
+        {
+          "text": "101010101 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "341"
+            },
+            {
+              "label": "(16)",
+              "solution": "155"
+            }
+          ]
+        },
+        {
+          "text": "185 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "10111001"
+            },
+            {
+              "label": "(16)",
+              "solution": "B9"
+            }
+          ]
+        },
+        {
+          "text": "111 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1101111"
+            },
+            {
+              "label": "(16)",
+              "solution": "6F"
+            }
+          ]
+        },
+        {
+          "text": "454 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "111000110"
+            },
+            {
+              "label": "(16)",
+              "solution": "1C6"
+            }
+          ]
+        },
+        {
+          "text": "1101011 + 10100",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1111111"
+            }
+          ]
+        },
+        {
+          "text": "11101011 + 1011",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "11110110"
+            }
+          ]
+        },
+        {
+          "text": "10101011 + 1011101",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "100001000"
+            }
+          ]
+        },
+        {
+          "text": "1101011 * 10",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "11010110"
+            }
+          ]
+        },
+        {
+          "text": "11101011 * 1011",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "101000011001"
+            }
+          ]
+        },
+        {
+          "text": "101101 * 1001",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "110010101"
+            }
+          ]
+        },
+        {
+          "text": "1101111 - 10100",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1011011"
+            }
+          ]
+        },
+        {
+          "text": "11101011 - 1011",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "11100000"
+            }
+          ]
+        },
+        {
+          "text": "1001 - 101",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "100"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
