@@ -1,0 +1,9 @@
+<form action="/payment/book" method="post" class="payment">
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-name="Codefabrik GmbH"
+      data-key="<%= settings.publishable_key %>"
+      data-description="Informationstechnologie Grundlagen"
+      data-amount="3220"
+      data-locale="auto"
+      data-currency="chf"></script>
+  </form>

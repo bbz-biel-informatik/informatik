@@ -1,0 +1,22 @@
+<%
+  pages = Dir.glob 'views/courses/*'
+  pages.map! { |page| page.split('/').last.split('.').first }
+
+  currentpage = request.path_info.split('/').last
+%>
+
+<div id="menu">
+  <ul>
+    <% pages.each do |page| %>
+      <% if page == currentpage %>
+        <li class="current_page_item"><a href="/courses/<%= page %>" accesskey="1" title="">Einführung &amp; Zahlensysteme</a></li>
+      <% else %>
+        <li><a href="/courses/<%= page %>" accesskey="3" title="">About Us</a></li>
+      <% end %>
+    <% end %>
+    <!--<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+    <li><a href="#" accesskey="3" title="">About Us</a></li>
+    <li><a href="#" accesskey="4" title="">Careers</a></li>
+    <li><a href="#" accesskey="5" title="">Contact Us</a></li>-->
+  </ul>
+</div>
