@@ -1,0 +1,186 @@
+{
+  "topics": [
+    {
+      "id": "04_binpref",
+      "description": "Binär-Präfixe",
+      "questions": [
+        {
+          "text": "1 kB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "1000"
+            },
+            {
+              "label": "b",
+              "solution": "8000"
+            }
+          ]
+        },
+        {
+          "text": "4 MB",
+          "answers": [
+            {
+              "label": "kB",
+              "solution": "4000"
+            },
+            {
+              "label": "B",
+              "solution": "4000000"
+            },
+            {
+              "label": "b",
+              "solution": "32000000"
+            }
+          ]
+        },
+        {
+          "text": "8 GB",
+          "answers": [
+            {
+              "label": "MB",
+              "solution": "8000"
+            },
+            {
+              "label": "kB",
+              "solution": "8000000"
+            },
+            {
+              "label": "B",
+              "solution": "8000000000"
+            }
+          ]
+        },
+        {
+          "text": "2 TB",
+          "answers": [
+            {
+              "label": "GB",
+              "solution": "2000"
+            },
+            {
+              "label": "MB",
+              "solution": "2000000"
+            },
+            {
+              "label": "kB",
+              "solution": "2000000000"
+            }
+          ]
+        },
+        {
+          "text": "1 KiB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "1024"
+            },
+            {
+              "label": "b",
+              "solution": "8192"
+            }
+          ]
+        },
+        {
+          "text": "4 MiB",
+          "answers": [
+            {
+              "label": "KiB",
+              "solution": "4096"
+            },
+            {
+              "label": "B",
+              "solution": "4194304"
+            },
+            {
+              "label": "b",
+              "solution": "33554432"
+            }
+          ]
+        },
+        {
+          "text": "8 GiB",
+          "answers": [
+            {
+              "label": "MiB",
+              "solution": "8192"
+            },
+            {
+              "label": "kiB",
+              "solution": "8388608"
+            },
+            {
+              "label": "B",
+              "solution": "8589934592"
+            }
+          ]
+        },
+        {
+          "text": "2 TiB",
+          "answers": [
+            {
+              "label": "GiB",
+              "solution": "2048"
+            },
+            {
+              "label": "MiB",
+              "solution": "2097152"
+            },
+            {
+              "label": "KiB",
+              "solution": "2147483648"
+            }
+          ]
+        },
+        {
+          "text": "12.52 MB",
+          "answers": [
+            {
+              "label": "b",
+              "solution": "100160"
+            }
+          ]
+        },
+        {
+          "text": "24'800'000'000 b",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "3100000000"
+            },
+            {
+              "label": "MB",
+              "solution": "3100"
+            }
+          ]
+        },
+        {
+          "text": "4 KiB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "4096"
+            },
+            {
+              "label": "b",
+              "solution": "32768"
+            }
+          ]
+        },
+        {
+          "text": "16 MiB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "16777216"
+            },
+            {
+              "label": "b",
+              "solution": "134217728"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
