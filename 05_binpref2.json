@@ -9,11 +9,11 @@
           "answers": [
             {
               "label": "B",
-              "solution": "82500"
+              "solution": "82500000"
             },
             {
               "label": "b",
-              "solution": "660000"
+              "solution": "660000000"
             }
           ]
         },
@@ -25,8 +25,8 @@
               "solution": "4530000"
             },
             {
-              "label": "MB",
-              "solution": "4530"
+              "label": "MB (Punkt als Dezimaltrennzeichen)",
+              "solution": "4.53"
             }
           ]
         },
@@ -35,11 +35,11 @@
           "answers": [
             {
               "label": "B",
-              "solution": "1024"
+              "solution": "4096"
             },
             {
               "label": "b",
-              "solution": "8192"
+              "solution": "32768"
             }
           ]
         },
@@ -78,7 +78,7 @@
             },
             {
               "label": "MB",
-              "solution": "8000"
+              "solution": "8000000"
             }
           ]
         },
