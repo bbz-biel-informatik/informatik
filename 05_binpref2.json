@@ -90,7 +90,7 @@
               "solution": "32000"
             },
             {
-              "label": "kiB",
+              "label": "kiB (Punkt als Dezimaltrennzeichen)",
               "solution": "31.25"
             }
           ]
@@ -103,7 +103,7 @@
               "solution": "512000000"
             },
             {
-              "label": "MiB",
+              "label": "MiB (Punkt als Dezimaltrennzeichen)",
               "solution": "488.28125"
             }
           ]
