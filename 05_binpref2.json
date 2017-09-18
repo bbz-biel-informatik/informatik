@@ -1,0 +1,114 @@
+{
+  "topics": [
+    {
+      "id": "05_binpref2",
+      "description": "Binär-Präfixe",
+      "questions": [
+        {
+          "text": "82.5 MB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "82500"
+            },
+            {
+              "label": "b",
+              "solution": "660000"
+            }
+          ]
+        },
+        {
+          "text": "36240000 b",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "4530000"
+            },
+            {
+              "label": "MB",
+              "solution": "4530"
+            }
+          ]
+        },
+        {
+          "text": "4 KiB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "1024"
+            },
+            {
+              "label": "b",
+              "solution": "8192"
+            }
+          ]
+        },
+        {
+          "text": "16 MiB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "16777216"
+            },
+            {
+              "label": "b",
+              "solution": "134217728"
+            }
+          ]
+        },
+        {
+          "text": "2 TiB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "2199023255552"
+            },
+            {
+              "label": "GB (Punkt als Dezimaltrennzeichen)",
+              "solution": "2199.023255552"
+            }
+          ]
+        },
+        {
+          "text": "8 GB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "8000000000"
+            },
+            {
+              "label": "MB",
+              "solution": "8000"
+            }
+          ]
+        },
+        {
+          "text": "256 kb",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "32000"
+            },
+            {
+              "label": "kiB",
+              "solution": "31.25"
+            }
+          ]
+        },
+        {
+          "text": "512 MB",
+          "answers": [
+            {
+              "label": "B",
+              "solution": "512000000"
+            },
+            {
+              "label": "MiB",
+              "solution": "488.28125"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
