@@ -38,7 +38,7 @@ class MyApp < Sinatra::Base
     send_file "files/#{folder}/#{file}"
   end
 
-  get '/files/:file' do |folder, file|
+  get '/files/:file' do |file|
     send_file "files/#{file}"
   end
 
