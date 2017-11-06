@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <xmp theme="united" style="display:none;">
+# Digitale Logik
+
+## Schaltungen
+
+Elektronische Schaltungen in einem PC sind aus sogenannten elektronischen Gattern aufgebaut. Gatter sind Bauteile, die einen oder zwei Signaleingänge haben und einen Ausgang. Das Signal, das sie am Ausgang generieren, hängt von den Eingangssignalen ab. Die Signale können jeweils 0 (kein Strom) oder 1 (Strom) sein.
+
+## Gatter und ihre Schaltsymbole
+
+Es gibt dabei drei Arten von Gattern, die meist zur Verwendung kommen. Die Eingänge sind jeweils als A und B bezeichnet, der Ausgang als X oder Y.
+
+### Und-Gatter
+
+Das Und-Gatter hat zwei Eingänge und generiert am Ausgang nur dann ein Signal (1), wenn an *beiden* Eingängen das Signal 1 anliegt.
+
+![](https://upload.wikimedia.org/wikipedia/commons/c/c2/IEC_AND_label.svg)
+
+### Oder-Gatter
+
+Das Oder-Gatter hat zwei Eingänge und generiert am Ausgang dann ein Signal (1), wenn an *mindestens einem* der Eingänge das Signal 1 anliegt.
+
+![](https://upload.wikimedia.org/wikipedia/commons/4/40/IEC_OR_label.svg)
+
+### Nicht-Gatter
+
+Das Nicht-Gatter hat im Gegensatz zu den beiden oberen Gattern nur einen Eingang und generiert am Ausgang das Signal, das gerade das Gegenteil des Eingangssignals ist.
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/31/IEC_NOT_label.svg)
+
+## Wahrheitstabelle
+
+Die Funktionsweise jedes Gatters kann auch in einer sogenannten Wahrheitstabelle dargestellt werden. In der Tabelle werden jeweils alle möglichen Kombinationen der Eingangssignale und das dazugehörige Ausgangssignal aufgelistet.
+
+Die Warheitstabelle des Und-Gatters sieht beispielsweise so aus:
+
+| A | B | X |
+|---|---|---|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+Die Wahrheitstabelle des Oder-Gatters:
+
+| A | B | X |
+|---|---|---|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+Die Wahrheitstabelle des Nicht-Gatters
+
+| A | X |
+|---|---|
+| 0 | 1 |
+| 1 | 0 |
+
+## Schaltungsgleichung
+
+Jedes Gatter kann auch als sogenannte Schaltungsgleichung dargestellt werden. Dabei wird jedes Gatter durch ein eigenes Symbol dargestellt, das Eingänge miteinander verknüpfen kann.
+
+Das Und-Gatter:
+
+X = A &and; B
+
+Das Oder-Gatter:
+
+X = A &or; B
+
+Das Nicht-Gatter:
+
+X = &not; A
+
+## Gatter
+
+Jedes Gatter kann also auf drei Arten dargestellt werden. Als Schaltzeichen in einem Schaltplan (am häufigsten verwendet, wenn eine Schaltung elektronisch gebaut werden soll), als Wahrheitstabelle (meist als Zwischenschritt) und als Schaltungsgleichung (häufig zur Optimierung und Vereinfachung von Schaltungen).
+
+## Schaltungen finden
+
+Mehrere Gatter können dann zu komplizierten Schaltungen kombiniert werden. Diese Schaltungen können mit unterschiedlichen Vorgehensweisen gefunden werden. Soll zum Beispiel eine Schaltung gefunden werden, die drei Eingänge A, B und C hat, die als Ausgang dann 1 generiert, wenn entweder A und C oder B und C das Signal 1 erhalten, gibt es zwei Möglichkeiten:
+
+### Methode 1: Direkt
+
+Einfache Schaltungen können teilweise direkt gezeichnet werden. Das obige Beispiel kann direkt in eine Schaltungsgleichung umgewandlet werden: "Ausgang ist 1 falls die folgenden Eingänge 1 sind: A und C oder B und C" &rarr; (A &and; C) &or; (B &and; C).
+
+Diese Gleichung kann dann gezeichnet werden, indem die Symbole mit dem entsprechenden Gatter ersetzt werden und die Eingänge richtig verbunden werden: [Simulator](https://simulator.io/board/S6ZejxoXFJ/1)
+
+
+### Methode 2: Wahrheitstabelle aufstellen und Gleichung berechnen
+
+Im allgemeinen sind elektronische Schaltungen zu kompliziert, als dass sie direkt gezeichnet werden könnten. Deshalb gibt es eine andere Methode, die den Umweg über eine Wahrheitstabelle macht. Bei dieser Methode wird zuerst eine Wahrheitstabelle mit drei Eingängen und einem Ausgang aufgeschrieben (wichtig: alle möglichen Kombinationen von Eingängen müssen aufgelistet sein):
+
+| A | B | C | X |
+|---|---|---|---|
+| 0 | 0 | 0 |  |
+| 0 | 0 | 1 |  |
+| 0 | 1 | 0 |  |
+| 0 | 1 | 1 |  |
+| 1 | 0 | 0 |  |
+| 1 | 0 | 1 |  |
+| 1 | 1 | 0 |  |
+| 1 | 1 | 1 |  |
+
+Danach werden die Ausgangssignale wie in der Aufgabe beschrieben eingetragen:
+
+| A | B | C | X |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 |
+
+
+Von dieser Wahrheitstabelle kann nun die Schaltungsgleichung abgeleitet werden, indem nur diejenigen Zeilen beachtet werden, die als Ausgang das Signal 1 haben.
+
+Jetzt müssen die Eingangssignale dieser Zeilen mit logischen Symbolen verknüpft werden, und zwar indem jeweils die verschiedenen Eingänge A, B und C mit einem logischen Und (&and;) verknüpft werden.
+
+Falls der Eingang 1 ist, wird er direkt übernommen, falls er 0 ist, wird er negiert.
+
+Für das obenstehende Beispiel werden die drei Zeilen mit 1 als Ausgang so dargestellt:
+
+&not;A &and; B &and; C
+
+A &and; &not;B &and; C
+
+A &and; B &and; C
+
+Diese drei Formeln werden nur durch ein logisches Oder (&or;) verknüpft:
+
+X = (&not;A &and; B &and; C) &or; (A &and; &not;B &and; C) &or; (A &and; B &and; C)
+
+(Diese Formel könnte noch stark vereinfacht werden, das schauen wir aber hier nicht an)
+
+Diese Formel kann dann als logische Schaltung gezeichnet werden, indem jeweils die Eingänge entsprechend mit den Gattern verbunden werden: [Simulator]()
+
+
+## Aufgaben
+
+Berechne jeweils die logische Gleichung und zeichne die Schaltung für die folgenden Aufgaben.
+
+* Baue eine Schaltung mit zwei Eingängen, die 1 ausgibt, falls beide Eingänge auf 1 stehen.
+* Baue eine Schaltung mit zwei Eingängen, die 1 ausgibt, falls beide Eingänge gleich sind.
+
+* Baue eine Schaltung mit drei Eingängen, die nur 1 ausgibt, wenn alle Eingänge auf 1 stehen.
+* Baue eine Schaltung mit drei Eingängen, die nur 1 ausgibt, wenn alle Eingänge gleich sind.
+* Baue eine Schaltung mit drei Eingängen, die nur 1 ausgibt, wenn genau zwei Eingänge 1 sind.
+
+* Baue eine Schaltung, die zwei einstellige Binärzahlen addiert. Achtung: 1 + 1 = 10. Das heisst, du brauchst eine Wahrheitstabelle mit zwei Ausgängen, die dir zwei Gleichungen ergibt (eine Gleichung pro Ausgang).
+* Baue eine Schaltung, die zwei zweistellige Binärzahlen addiert (4 Eingänge [2x2 Ziffern], 3 Ausgänge [3 Ziffern]).
+
+  </xmp>
+  <script src="https://cdn.rawgit.com/Naereen/StrapDown.js/master/strapdown.min.js"></script>
+</body>
+
+</html>
