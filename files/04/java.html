@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <xmp theme="united" style="display:none;">
+
+# Java
+
+## Programmierung
+
+Programmieren besteht daraus, eine für den Computer verständliche Anleitung zu schreiben, was dieser tun soll. Diese Anleitung muss sehr detailliert geschrieben sein, damit der PC diese versteht. Eine gute Analogie ist das Schreiben eines Kochrezeptes für ein Kleinkind. Jeder Schritt muss sehr ausführlich erklärt sein, damit das Kind keine Fehler macht.
+Der Computer führt die Anweisungen dann eine nach der anderen aus.
+
+Je nach Vorliebe kann diese Anleitung in einer anderen Programmier-Sprache geschrieben werden. Verschiedene Programmiersprachen sind für unterschiedliche Anwendungsgebiete geeignet und vereinfachen in unterschiedlichen Bereichen die Arbeit. Grundsätzlich spielt aber die Wahl der Programmiersprache für den Funktionsumfang eines Programmes keine Rolle.
+
+## Vorbereitung
+
+Um mit Java programmieren zu können, müssen drei Werkzeuge installiert sein. Die Java-VM (enthalten im Java Runtime Environment JRE, zur Ausführung der Programme), der Java Compiler (enthalten im Java Development Kit JDK), und ein Texteditor.
+
+Um zu testen, ob die verschiedenen Komponenten installiert sind kann wie folgt vorgegangen werden:
+
+* JRE: ein Terminalfenster öffnen (<kbd>Win</kbd>+<kbd>R</kbd> drücken, `cmd` eintippen und <kbd>Enter</kbd> oder "Terminal.app" starten) und den Befehl `java`, gefolgt von <kbd>Enter</kbd> eingeben.
+* JDK: ein Terminalfenster öffnen und den Befehl `javac`, gefolgt von <kbd>Enter</kbd> eingeben.
+
+
+## Ausführung von Programmen
+
+Bevor ein Programm mit Java ausgeführt werden kann, muess es noch in eine vom Prozessor verständliche Form umgewandelt werden. Dieser Schritt wird "kompilieren" genannt.
+
+In Java wird Quellcode mit dem Programm `javac` (Java Compiler) in Maschinencode umgewandelt. Das heisst, wenn ein Programm mit Dateiname `Hallo.java` vorliegt, kann der Code mit dem Befehl
+
+```bash
+javac Hallo.java
+```
+kompiliert werden.
+
+Falls im Quellcode Fehler vorliegen, zeigt `javac` diese an. Keine Ausgabe bedeutet, dass das Programm in Ordnung ist.
+
+Sollte die Kompilation funktioniert haben, generiert `javac` eine Datei mit Maschinencode, die `Hallo.class` heisst. Diese kann mit dem Programm `java` dann ausgeführt werden:
+```bash
+java Hallo
+```
+Wichtig: keine Dateiendung!
+
+## Grundgerüst
+
+Ein Java-Programm baut immer auf dem gleichen Grundgerüst auf. Später werden die einzelnen Bestandteile noch genauer erklärt.
+
+
+```java
+public class Hallo {
+  public static void main(String[] args) {
+    // Code hier
+    System.out.println("Hallo");
+  }
+}
+```
+
+Dieses (einfache) Programm gibt, sobald es ausgeführt wird, in der Konsole den Text `Hallo` aus. Dieser Text kann natürlich angepasst werden, und das Programm kann mehr als nur einen Befehl ausführen. Die ganze Logik muss jedoch zwischen den geschweiften Klammern stehen, die oben die Zeile `System.out.println(...)` beinhalten.
+
+## Kommentare
+
+Kommentare werden dazu verwendet, zusätzliche Erklärungen im Programmcode abzulegen, zum Beispiel um zu beschrieben, was eine Codezeile macht oder um komplexe Schritte zu erklären. Text, der als Kommentar im Programm eingefügt ist wird vom PC ignoriert und dient nur als Hilfe für andere Menschen.
+
+Es gibt zwei Arten, einen Kommentar in ein Java-Programm einzufügen:
+
+```java
+// Einzeiliger Kommentar
+```
+
+oder
+
+```java
+/*
+mehrzeiliger
+Kommentar
+*/
+```
+
+## Datentypen
+
+Jede Information, die in einem Programm vorhanden ist (z.B. Namen einer Klassenliste, Noten, Anzahl Punkt eines Spiels) hat einen bestimmten Datentyp. Der Datentyp legt fest, welche Operationen mit dieser Information möglich sind (z.B. Addition für Zahlen, Umwandlung in Kleinbuchstaben für Texte). In Java sind 8 Datentypen bereits eingebaut. Die vier wichtigsten:
+
+| Datentyp | Beschreibung | Wertebereich |
+|---|---|---|
+| int | Integer (Ganzzahl) | -2<sup>31</sup> bis 2<sup>31</sup>-1 |
+| float | Floating Point Number (Gleitkommazahl) | ganz klein bis ganz gross |
+| boolean | Boolean | true (wahr) oder false (falsch) |
+| String | Text | Beliebig lange Kette beliebiger Buchstaben |
+
+Im Moment werden wir nur die Datentypen `int` und `String` verwenden.
+
+## Variablen
+
+Um in einem Java-Programm mit Informationen arbeiten zu können, müssen wir eine Möglichkeit haben, diese Informationen zwischenzuspeichern. Dies ist dank Variablen möglich. Variablen sind Behälter im Arbeitsspeicher des Computers, in die wir Informationen speichern können um diese später wieder abzurufen.
+
+Um eine Information zu speichern, müssen wir dieser einen Namen geben, mit dem wir sie später wieder laden können. Der Name der Variable ist wie eine Beschriftung des Behälters, damit wir später die gespeicherten Informationen wieder finden. Die folgende Zeile speichert den Wert 22 in einer Variable mit Namen `alter`:
+
+```java
+int alter = 22;
+```
+
+Zusätzlich müssen wir den Datentyp der Information angeben (hier: `int`).
+
+Um den in der Variable gespeicherten Wert wieder zu verwenden, können wir den Namen der Variable in unserem Programm schreiben. Der Computer ersetzt dann selbständig den Variablennamen mit dem darin gespeicherten Wert.
+
+```java
+alter + alter;
+```
+
+## Konditionale
+
+## Schleifen
+
+## Funktionen
+
+## Arrays
+
+## Klassen
+
+## Serverprogrammierung?
+
+## Grafische Benutzeroberflächen?
+
+  </xmp>
+  <script src="https://cdn.rawgit.com/Naereen/StrapDown.js/master/strapdown.min.js"></script>
+</body>
+
+</html>
