@@ -101,9 +101,10 @@ Um eine Information zu speichern, müssen wir dieser einen Namen geben, mit dem 
 
 ```java
 int alter = 22;
+String name = "Robert";
 ```
 
-Zusätzlich müssen wir den Datentyp der Information angeben (hier: `int`).
+Zusätzlich müssen wir den Datentyp der Information angeben (hier: `int` und `String`).
 
 Um den in der Variable gespeicherten Wert wieder zu verwenden, können wir den Namen der Variable in unserem Programm schreiben. Der Computer ersetzt dann selbständig den Variablennamen mit dem darin gespeicherten Wert.
 
@@ -119,12 +120,41 @@ Dies wird mit sogenannten Konditionalen erreicht. Diese erlauben es, Bedingungen
 
 ```java
 int alter = 22;
-if(alter > 18) {
+if(alter >= 18) {
   System.out.println("Du bist volljährig.");
 }
 ```
 
+Jedes Konditional beginnt mit dem Schlüsselwort `if` und einer Klammer, die die Bedingung enthält. Nur wenn diese Bedingung erfüllt ist, wird der Code in den geschweiften Klammern ausgeführt. Die geschwiften Klammern können auch mehrere Zeilen Code enthalten.
+
+Es gibt auch die Möglichkeit, im Gegenfall (Bedingung ist nicht erfüllt) Code auszuführen. Dazu wird der gleiche Aufbau wie oben verwendet, aber noch ein `else`-Block angehängt:
+
+```java
+int alter = 22;
+if(alter >= 18) {
+  System.out.println("Du bist volljährig.");
+} else {
+  System.out.println("Du bist minderjährig");
+}
+```
+
+Der `else`-Block wird immer dann ausgeführt, wenn die Bedingung im `if`-Block nicht erfüllt war.
+
 ## Schleifen
+
+Schleifen funktionieren ähnlich wie Konditionale, mit dem Unterschied, dass der Code in den geschweiften Klammern nicht einmal, sondern solange die Bedingung erfüllt ist, ausgeführt wird.
+
+So kann Code so lange wiederholt werden, bis ein bestimmtes Ziel erreicht wird:
+
+```java
+int alter = 0;
+while(alter &lt; 20) {
+  System.out.println("Happy Birthday!");
+  alter = alter + 1;
+}
+```
+
+Dieses Codebeispiel definiert eine Variable `alter`, die zu Beginn den Wert 0 hat. Solange die Variable kleiner als 20 ist, wird jeweils der Text "Happy Birhtday" angezeigt und die Variable um 1 hochgezählt.
 
 ## Funktionen
 
