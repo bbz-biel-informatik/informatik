@@ -160,6 +160,41 @@ Dieses Codebeispiel definiert eine Variable `alter`, die zu Beginn den Wert 0 ha
 
 Arrays sind Variablen, in denen nicht nur ein einziger Wert, sondern eine Liste von Werten gespeichert werden kann. Jeder Eintrag der Liste hat eine Position, über die er geschrieben und gelesen werden kann.
 
+Arrays sind vorallem dann nützlich, wenn eine grosse Zahl gleichartiger Werte existiert, zum Beispiel die Namen einer Klassenliste oder die Noten eines Notenrechners.
+
+Um eine Array aus Integers zu definieren kann der folgende Code verwendet werden:
+
+```java
+int[] data = new int[10];
+String[] namen = new String[3];
+```
+Das reserviert Speicherplatz für ein Integer-Array, das Platz für 10 Integers hat. Die Positionen der einzelnen Einträge ist 0, 1, 2, 3, ..., 8, 9. Wichtig: die Nummerierung beginnt bei 0 und hört bei (Einträge - 1) auf!
+
+Das String-Array hat 3 Plätze, nummeriert mit 0, 1 und 2.
+
+Um ein Element aus einem Array zu lesen, muss dessen Position bekannt sein:
+
+```java
+int nummer = data[3];
+```
+
+Diese Zeile liest das Element an Position 3 (das vierte Element) aus dem Array und speichert es in der Variable `nummer`. Auch hier wichtig: die Nummerierung beginnt bei 0 und geht bis 9.
+
+Entsprechend können auch neue Werte ins Array gespeichert oder alte Werte überschrieben werden:
+
+```java
+data[0] = 100;
+```
+
+Diese Zeile schreibt an Position 0 den Wert 100.
+
+Ein Array kann auch direkt bei der Erstellung mit Werten gefüllt werden:
+
+```java
+int[] data = {23, 38, 14, -3, 0, 14, 9, 103, 0, -56 };
+String[] namen = { "Reto", "Robert", "Ron" };
+```
+
 ## Funktionen
 
 

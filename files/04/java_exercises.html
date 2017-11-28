@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <xmp theme="united" style="display:none;">
+# Java
+
+## Aufgaben
+
+### Tic-Tac-Toe
+
+Programmiere ein Tic-Tac-Toe. Der Benutzer sollte jeweils wählen können, wo er die nächste Markierung setzen will. Überprüfe, ob auf dem gewählten Feld schon eine Markierung ist.
+
+Bonus:
+
+* Lasse den PC überprüfen, ob es einen Sieger gibt
+* Programmiere einen Computerspieler, der gegen dich spielt
+
+### Hänkerlispiel
+
+Programmiere ein Hänkerlispiel. Du darfst Wörter vordefinieren:
+
+```java
+String[] woerter = { "Haus", "Überraschung", "Programmieren", "..." };
+```
+
+Das Spiel soll dann beim Start ein zufälliges Wort auswählen, das du raten sollst und die Anzahl Buchstaben als Platzhalter anzeigen:
+
+    _ _ _ _
+
+Programmiere das Spiel dann, indem du die folgenden Schritte programmierst. Teste dein Programm jeweils dazwischen!
+
+* Lasse den User Buchstaben raten. Korrekte Buchstaben sollen anstelle der Platzhalter angezeigt werden; falsche Buchstaben sollen ignoriert werden:
+
+    \_ a \_ s
+* Zähle die Anzahl falsch geratener Buchstaben. Nach 11 Buchstaben soll das Spiel abgebrochen werden.
+
+* Versuche als letztes noch, einen Galgen mit Mensch zu zeichnen, der mit jedem falsch geratenen Bucshtaben erweitert wird.
+
+Tipps:
+
+* Um die Länge eines Strings und dessen einzelne Buchstaben zu erhalten, kannst du `myString.length` und `myString[0]`, `myString[1]` usw. verwenden
+* Um zu testen, ob ein Text einen Buchstaben enthält (und an welcher Position), kannst du die Funktion `indexOf` verwenden
+
+  </xmp>
+  <script src="https://cdn.rawgit.com/Naereen/StrapDown.js/master/strapdown.min.js"></script>
+</body>
+
+</html>
