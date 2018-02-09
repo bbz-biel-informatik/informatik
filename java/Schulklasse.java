@@ -9,8 +9,16 @@ public class Schulklasse {
     this.schueler = new ArrayList<Schueler>();
   }
 
+  public String getName() {
+    return name;
+  }
+
   public void hinzufuegen(Schueler s) {
     schueler.add(s);
+  }
+
+  public void hinzufuegen(ArrayList<Schueler> s) {
+    schueler.addAll(s);
   }
 
   public void anzeigen() {

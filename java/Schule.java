@@ -42,7 +42,15 @@ public class Schule {
       }
 
       if (auswahl == 3) {
-
+        System.out.println("Klassenname?");
+        String name = scanner.nextLine();
+        for (int i = 0; i < klassen.size(); i++) {
+          if (klassen.get(i).getName().equals(name)) {
+            klassen.get(i).hinzufuegen(schueler);
+            System.out.println("Klasse hinzugefügt");
+            klassen.clear();
+          }
+        }
       }
 
       if (auswahl == 4) {
