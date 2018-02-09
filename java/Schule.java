@@ -23,6 +23,7 @@ public class Schule {
     System.out.println("1: Klasse erfassen; 2: Schüler erfassen; 3: Schüler zu Klasse hinzufügen; 4: Klasse anzeigen");
     System.out.println("Was möchtest du tun?");
     int auswahl = scanner.nextInt();
+    scanner.nextLine();
 
     while (auswahl != 0) {
       if (auswahl == 1) {
@@ -54,6 +55,7 @@ public class Schule {
           .println("1: Klasse erfassen; 2: Schüler erfassen; 3: Schüler zu Klasse hinzufügen; 4: Klasse anzeigen");
       System.out.println("Was möchtest du tun?");
       auswahl = scanner.nextInt();
+      scanner.nextLine();
     }
 
     System.out.println("Auswahl war 0, beenden");
