@@ -17,6 +17,10 @@ class MyApp < Sinatra::Base
   get '/courses/:name' do |name|
     erb "courses/#{name}".to_sym
   end
+
+  get '/exercises/*' do |file|
+    send_file "exercises/#{params[:splat].first}"
+  end
   
   get '/exercises.html' do
     send_file 'views/exercises.html'
