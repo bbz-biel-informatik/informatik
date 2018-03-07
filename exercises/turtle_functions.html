@@ -24,32 +24,33 @@
   down()
   ```
   zeichnet zum Beispiel ein Quadrat.
+  
+  Wenn du Figuren mehrmals zeichnen willst, kannst du selber einen Befehl definieren. In diesem Befehl sind dann mehrere Befehle enthalten sind. Diesen kannst du dann mehrmals verwenden.
+  
+Diese 6 Zeilen sagen dem Computer, dass er einen Befehl mit Namen "quadrat" definieren soll:
 
-  Der Befehl `reset()` löscht das gezeichnete und setzt den Stift auf die Ausgangsposition. 
+```js
+function quadrat() {
+  right()
+  up()
+  left()
+  down()
+}
+```
+
+Um dann ein Quadrat zu zeichnen, kannst du den Namen des Befehls eingeben:
+
+```js
+quadrat()
+```
+
   
   ### Aufgaben
-  * Schreibe ein Programm, das ein Quadrat zeichnet
+  * Definiere selber einen Befehl, der ein Quadrat zeichnet
 ![quadrat](images/square.png)
-  * Schreibe ein Programm, das drei Stufen zeichnet
-![quadrat](images/stairs.png)
-
-  Du kannst den Befehlen auch sagen, wie lang die Linie werden soll:
-  
-  ```js
-  up(100)
-  left(20)
-  down(100)
-  ```
-
-  ### Aufgaben
-  * Schreibe ein Programm, das ein Hochhaus zeichnet
-![quadrat](images/skyscraper.png)
-  * Schreibe ein Programm, das die folgende Form zeichnet
-![quadrat](images/exercise03_quadrat_a.png)
-  * Schreibe ein Programm, das die folgende Form zeichnet
-![quadrat](images/exercise03_helix.png)
-  * Schreibe ein Programm, das die folgende Form zeichnet
-![quadrat](images/animal.png)
+  * Schreibe einen Befehl, das eine Treppenstufe zeichet. Schreibe dann ein Programm, das 20 Stufen zeichnet
+![quadrat](images/stairs2.png)
+  * Schreibe einen Befehl, der ein Haus zeichnet. Zeichne damit mehrere Häuser nacheinander.
   </xmp>
 </body>
 
