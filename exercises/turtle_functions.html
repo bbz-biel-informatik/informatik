@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="js/point.js"></script>
+  <script src="js/drawCommands.js"></script>
+</head>
+
+<body>
+  <div align='center'>
+    <h3>Zeichnungsfeld</h3>
+    <canvas id="drawboard" width="600" height="400" style="border:1px solid #d3d3d3;background:#ffffff;"></canvas>
+  </div>
+  <xmp theme="united" style="display:none;">
+  ## Programmieren
+ 
+  Im Zeichungsfeld kannst du zeichnen, indem du mit <kbd>F12</kbd> die Konsole öffnest und dort die Befehle `right()`, `left()`, `up()` und `down()` eingibst.
+  Der Code
+  ```js
+  right()
+  up()
+  left()
+  down()
+  ```
+  zeichnet zum Beispiel ein Quadrat.
+
+  Der Befehl `reset()` löscht das gezeichnete und setzt den Stift auf die Ausgangsposition. 
+  
+  ### Aufgaben
+  * Schreibe ein Programm, das ein Quadrat zeichnet
+![quadrat](images/square.png)
+  * Schreibe ein Programm, das drei Stufen zeichnet
+![quadrat](images/stairs.png)
+
+  Du kannst den Befehlen auch sagen, wie lang die Linie werden soll:
+  
+  ```js
+  up(100)
+  left(20)
+  down(100)
+  ```
+
+  ### Aufgaben
+  * Schreibe ein Programm, das ein Hochhaus zeichnet
+![quadrat](images/skyscraper.png)
+  * Schreibe ein Programm, das die folgende Form zeichnet
+![quadrat](images/exercise03_quadrat_a.png)
+  * Schreibe ein Programm, das die folgende Form zeichnet
+![quadrat](images/exercise03_helix.png)
+  * Schreibe ein Programm, das die folgende Form zeichnet
+![quadrat](images/animal.png)
+  </xmp>
+</body>
+
+<script src="https://cdn.rawgit.com/Naereen/StrapDown.js/master/strapdown.min.js"></script>
+
+</html>
