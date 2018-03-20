@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="js/point.js"></script>
+  <script src="js/drawCommands.js"></script>
+</head>
+
+<body>
+  <div align='center'>
+    <h3>Zeichnungsfeld</h3>
+    <canvas id="drawboard" width="600" height="400" style="border:1px solid #d3d3d3;background:#ffffff;"></canvas>
+  </div>
+  <xmp theme="united" style="display:none;">
+  ## Programmieren
+ 
+  Neu gibt es die Befehle `forward()` und `back()`. Sie funktionieren wie `up()` und `down()`, fahren aber in die gleiche Richtung weiter.
+
+  Du kannst neu auch mit `turnLeft()` und `turnRight()` die Spur drehen. Du kannst zum Beispiel mit dem folgenden Code
+  
+  ```js
+  forward(20)
+  turnRight(30)
+  forward(20)
+  turnRight(30)
+  forward(20)
+  turnRight(30)
+  forward(20)
+  ```
+
+  die folgende Figur zeichnen:
+
+![arc](images/arg.png)
+
+Du kannst auch einen einzelnen Schritt rückgängig machen mit `undo()`.
+
+Wenn du die Farbe ändern willst, kannst du den Befehl `setColor()` verwenden:
+
+
+```js
+setColor('red')
+forward(40)
+setColor('blue')
+forward(40)
+```
+
+## Aufgaben
+
+* Zeichne ein Sechseck ![hexagon](images/hex.png)
+* Zeichne ein 10-Eck ![decagon](images/dec.png)
+* Zeichne einen Kreis ![circle](images/circle.png)
+
+  </xmp>
+</body>
+
+<script src="https://cdn.rawgit.com/Naereen/StrapDown.js/master/strapdown.min.js"></script>
+
+</html>
