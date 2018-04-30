@@ -2,26 +2,24 @@ import java.util.ArrayList;
 
 public class Schulklasse {
   private String name;
-  private ArrayList<Schueler> schueler;
+  private ArrayList<ILebewesen> schueler;
 
   public Schulklasse(String name) {
     this.name = name;
-    this.schueler = new ArrayList<Schueler>();
+    this.schueler = new ArrayList<ILebewesen>();
   }
 
   public String getName() {
     return name;
   }
 
-  public void hinzufuegen(Schueler s) {
+  public void hinzufuegen(ILebewesen s) {
     schueler.add(s);
   }
 
-  public void hinzufuegen(ArrayList<Schueler> s) {
-    schueler.addAll(s);
-  }
-
   public void anzeigen() {
-    System.out.println(schueler);
+    for(int i = 0; i < schueler.size(); i = i + 1) {
+      System.out.println(schueler.get(i).toString());
+    }
   }
 }

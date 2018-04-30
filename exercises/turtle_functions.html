@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="js/point.js"></script>
+  <script src="js/drawCommands.js"></script>
+</head>
+
+<body>
+  <div align='center'>
+    <h3>Zeichnungsfeld</h3>
+    <canvas id="drawboard" width="600" height="400" style="border:1px solid #d3d3d3;background:#ffffff;"></canvas>
+  </div>
+  <xmp theme="united" style="display:none;">
+  ## Programmieren
+ 
+  Im Zeichungsfeld kannst du zeichnen, indem du mit <kbd>F12</kbd> die Konsole öffnest und dort die Befehle `right()`, `left()`, `up()` und `down()` eingibst.
+  Der Code
+  ```js
+  right()
+  up()
+  left()
+  down()
+  ```
+  zeichnet zum Beispiel ein Quadrat.
+  
+  Wenn du Figuren mehrmals zeichnen willst, kannst du selber einen Befehl definieren. In diesem Befehl sind dann mehrere Befehle enthalten sind. Diesen kannst du dann mehrmals verwenden.
+  
+Diese 6 Zeilen sagen dem Computer, dass er einen Befehl mit Namen "quadrat" definieren soll:
+
+```js
+function quadrat() {
+  right()
+  up()
+  left()
+  down()
+}
+```
+
+Um dann ein Quadrat zu zeichnen, kannst du den Namen des Befehls eingeben:
+
+```js
+quadrat()
+```
+
+  
+  ### Aufgaben
+  * Definiere selber einen Befehl, der ein Quadrat zeichnet
+![quadrat](images/square.png)
+  * Schreibe einen Befehl, das eine Treppenstufe zeichet. Schreibe dann ein Programm, das 20 Stufen zeichnet
+![quadrat](images/stairs2.png)
+  * Schreibe einen Befehl, der ein Haus zeichnet. Zeichne damit mehrere Häuser nacheinander.
+  </xmp>
+</body>
+
+<script src="https://cdn.rawgit.com/Naereen/StrapDown.js/master/strapdown.min.js"></script>
+
+</html>

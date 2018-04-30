@@ -1,4 +1,4 @@
-public class Schueler {
+public class Schueler implements ILebewesen {
   private String name;
   private String wohnort;
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+</head>
+<xmp theme="united" style="display:none">
+# Vererbung
+
+In komplexen Systemen kommt es häufig vor, dass verschiedene Klassen relativ ähnlich funktionieren und viele gleiche Eigenschaften und Methoden haben. So haben sowohl `Schüler` wie auch `Lehrer` die Eigenschaften Name, Wohnort und Telefonnummer. Sobald solche Überschneidungen identifiziert sind können dank der sogenannten **Vererbung** sich überschneidende Eigenschaften und Methoden in eine zusätzliche Klasse (die **Elternklasse**) ausgelagert werden, die dann von den ursprünglichen Klassen (**Kinderklassen**) eingebunden wird. Diese Kinderklassen können dann Eigenschaften und Methoden der Elternklasse genau so verwenden, als wären diese in der Kinderklasse selber vorhanden. So kann redundanter Code vermieden werden und das System kann in Zukunft einfacher angepasst werden.
+
+Existieren also zwei Klassen, die sich stark ähneln:
+
+```java
+class Schueler {
+  String name;
+  String wohnort;
+  
+  Schueler(String name, String wohnort) {
+    this.name = name;
+    this.wohnort = wohnort;
+  }
+  
+  String toString() {
+    return name + "(" + wohnort + ")";
+  }
+}
+
+class Lehrer {
+  String name;
+  String wohnort;
+
+  Lehrer(String name, String wohnort) {
+    this.name = name;
+    this.wohnort = wohnort;
+  }
+  
+  String toString() {
+    return name + "(" + wohnort + ")";
+  }
+}
+```
+
+dann kann der gemeinsame Code in eine neue Klasse verschoben werden:
+
+```java
+class Person {
+  String name;
+  String wohnort;
+
+  Person(String name, String wohnort) {
+    this.name = name;
+    this.wohnort = wohnort;
+  }
+  
+  String toString() {
+    return name + "(" + wohnort + ")";
+  }
+}
+```
+
+und die Kinderklassen können als solche markiert werden, indem hinter dem Klassennamen `extends Elternklasse` angefügt wird:
+
+```java
+class Schueler extends Person {
+  Schueler(String name, String wohnort) {
+    this.name = name;
+    this.wohnort = wohnort;
+  }
+}
+
+class Lehrer {
+  Lehrer(String name, String wohnort) {
+    this.name = name;
+    this.wohnort = wohnort;
+  }
+}
+```
+
+Vorsicht: der Konstruktor wird nicht von der Elternklasse geerbt und muss immer auch in den Kinderklassen explizit implementiert werden! Er kann jedoch, durch die Verwendung einer Referenz auf die Elternklasse, direkt von den Kinderklassen aufgerufen werden:
+
+```java
+class Schueler extends Person {
+  Schueler(String name, String wohnort) {
+    super(name, wohnort);
+  }
+}
+```
+
+Dabei ist `super` eine Referenz auf die Elternklasse, und mit `super()` wird der Konstruktor der Elternklasse aufgerufen.
+
+### Design-Gedanken
+
+Der Entscheid, Vererbung zu verwenden, ist immer ein Abwägen zwischen zwischen zwei Wegen. Einerseits die Möglichkeit, mit einer Elternklasse Redundanz zu vermeiden und dafür ein abstrakteres System zu bauen und andererseits die Möglichkeit, doppelten Code zu verwenden und dafür ein einfach verständliches System zu haben. 
+
+Manchmal lohnt es sich deshalb nicht von Anfang an, eine Klassenhierarchie zu erstellen. So kann es einfacher sein, zu Beginn die einzelnen Klassen separat zu programmieren und erst wenn der Funktionsumfang fix ist zu überprüfen, ob es sich lohnt, Teile in eine Elternklasse zu verlagern.
+
+Sonst besteht die Gefahr, dass unnötige Komplexität eingeführt wird für Klassen, bei denen am Schluss nur 2-3 Zeilen Code redundant waren.
+
+### Weiteres
+
+* Eigenschaften können von den Kinderklassen nur verwendet werden, wenn sie in der Elternklasse entweder als `public` oder `protected` markiert sind. Protected funktioniert wie `private`, lässt aber die Verwendung durch Kinderklassen zu.
+* Methoden können auch von den Kinderklassen überschrieben werden. Sollte eine Methode sowohl in der Kinderklasse wie auch in der Elternklasse existieren, wird beim Aufrufen die der Kinderklasse verwendet. Die der Elternklasse wird nur verwendet, wenn keine in der Kinderklasse existiert.
+* Methoden der Kinderklassen können mit dem Schlüsselwort `super` explizit Methoden und Eigenschaften der Elternklasse verwenden, zum Beispiel um der `toString()`-Methode zusätzliche Zeichen anzufügen:
+
+```java
+String toString() {
+  return "###" + super.toString() + "###";
+}
+```
+</xmp>
+
+<script src="https://cdn.rawgit.com/Naereen/StrapDown.js/master/strapdown.min.js"></script>
+</html>
