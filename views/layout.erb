@@ -23,7 +23,22 @@
 			</div>
 			<%= erb :menu %>
 		</div>
-    <%= yield %>
+			<div id="main">
+				<div id="welcome">
+					<div class="title">
+						<h2><%= settings.PAGE_NAMES[@page] %></h2>
+						<span class="byline">
+
+						</span>
+					</div>
+				</div>
+				<div id="featured">
+    			<%= yield %>
+				</div>
+			<div id="copyright">
+				<span>&copy; 2017-<%= Time.now.year %> Lukas Diener. All rights reserved.</a></span>
+			</div>
+		</div>
   </div>
 </body>
 

@@ -10,11 +10,21 @@ class MyApp < Sinatra::Base
 
   Stripe.api_key = settings.secret_key
 
+  set :PAGE_NAMES, {
+    '01_intro_zahlensysteme' => 'Einführung & Zahlensysteme',
+    '02_hardware' => 'Hardware',
+    '03_digilog_betriebssysteme' => 'Digitale Schaltungen & Betriebssysteme',
+    '04_programmieren' => 'Programmieren',
+    '05_datenbanken' => 'Datenbanken',
+    '99_bpi' => 'BPI'
+  }
+
   get '/' do
     redirect '/courses/01_intro_zahlensysteme'
   end
 
   get '/courses/:name' do |name|
+    @page = name
     erb "courses/#{name}".to_sym
   end
 
