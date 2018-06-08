@@ -1,8 +1,9 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.sql.*;
 
 public class Schule {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws SQLException {
     /*
     Schulklasse klasse1 = new Schulklasse("Wayup 2017");
     
@@ -14,6 +15,9 @@ public class Schule {
     
     klasse1.anzeigen();
     */
+
+    /* JDBC */
+    Connection conn = new Datenbank().connect();
 
     ArrayList<Schulklasse> klassen = new ArrayList<Schulklasse>();
     ArrayList<Schueler> schueler = new ArrayList<Schueler>();
@@ -29,8 +33,11 @@ public class Schule {
       if (auswahl == 1) {
         System.out.println("Name?");
         String name = scanner.nextLine();
-        Schulklasse k = new Schulklasse(name);
-        klassen.add(k);
+        /* JDBC */
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery("INSERT INTO schulklassen (name) VALUES ('" + name + "')");
+        rs.close();
+        st.close();
       }
       if (auswahl == 2) {
         System.out.println("Name?");
@@ -42,11 +49,12 @@ public class Schule {
       }
 
       if (auswahl == 3) {
+        /* INCOMPLETE! */
         System.out.println("Klassenname?");
         String name = scanner.nextLine();
         for (int i = 0; i < klassen.size(); i++) {
           if (klassen.get(i).getName().equals(name)) {
-            klassen.get(i).hinzufuegen(schueler);
+            //klassen.get(i).hinzufuegen(schueler);
             System.out.println("Klasse hinzugefügt");
             klassen.clear();
           }
@@ -54,9 +62,15 @@ public class Schule {
       }
 
       if (auswahl == 4) {
-        for (int i = 0; i < klassen.size(); i++) {
-          klassen.get(i).anzeigen();
+        /* JDBC */
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery("SELECT * FROM lieder");
+        while (rs.next()) {
+          System.out.println(rs.getInt("id"));
+          System.out.println(rs.getString("name"));
         }
+        rs.close();
+        st.close();
       }
 
       System.out
