@@ -1,5 +1,19 @@
+<h3>Todos</h3>
+
+<table>
+  <tr><td>ID</td><td>Text</td></tr>
 <% if @todos.each do |todo| %>
-  <p><%= todo.id %> - <%= todo.text %></p>
+  <tr><td><%= todo.id %></td><td><b><%= todo.text %></b> <a href="/todos/<%= todo.id %>">&rarr;</a></td>
 <% end.empty? %>
-  <em>Keine Todos</em>
+  <tr><td>Keine Todos</td><td></td></tr>
 <% end %>
+</table>
+
+<hr />
+
+<h5>Neu</h5>
+
+<form action="/todos" method="POST">
+  Text: <input type="text" name="text">
+  <input type="submit" value="Speichern">
+</form> 

@@ -1,1 +1,15 @@
+<h3><%= @todo && @todo.id %></h3>
+
+<a href="/todos">&larr; zurück</a>
+
 <p><%= @todo && @todo.id %> - <%= @todo && @todo.text %></p>
+
+<hr />
+
+<h5>Bearbeiten</h5>
+
+<form action="/todos/<%= @todo && @todo.id %>" method="POST">
+  Text: <input type="text" name="text" value="<%= @todo && @todo.text %>">
+  <input type="hidden" name="_method" value="PUT">
+  <input type="submit" value="Aktualisieren">
+</form> 

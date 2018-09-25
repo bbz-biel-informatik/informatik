@@ -8,6 +8,8 @@ class MyApp < Sinatra::Base
     book: OpenStruct.new(amount: 3220, name: 'Informationstechnologie Grundlagen')
   }
 
+  enable :method_override
+
   Stripe.api_key = settings.secret_key
 
   set :PAGE_NAMES, {
