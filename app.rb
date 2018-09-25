@@ -36,6 +36,50 @@ class MyApp < Sinatra::Base
     end
   end
 
+  ########################################################
+
+  get '/todos' do
+    @@todos ||= []
+    @todos = @@todos.sort_by(&:id)
+    erb "todos/index".to_sym
+  end
+
+  get '/todos/:id' do |id|
+    @@todos ||= []
+    @todo = @@todos.find { |todo| todo.id.to_i == id.to_i }
+    if @todo.nil?
+      status 404
+    end
+    erb "todos/show".to_sym
+  end
+
+  post '/todos' do
+    @@todos ||= []
+    @todo = OpenStruct.new(id: rand(9999), text: params[:text])
+    @@todos << @todo
+    erb "todos/show".to_sym
+  end
+
+  put '/todos/:id' do |id|
+    @@todos ||= []
+    @todo = OpenStruct.new(id: id, text: params[:text])
+    old_todo = @@todos.find { |todo| todo.id.to_i == id.to_i }
+    idx = @@todos.index(old_todo)
+    @@todos[idx] = @todo
+    @todos = @@todos
+    erb "todos/show".to_sym
+  end
+
+  delete '/todos/:id' do |id|
+    @@todos ||= []
+    old_todo = @@todos.find { |todo| todo.id.to_i == id.to_i }
+    idx = @@todos.index(old_todo)
+    @@todos.delete_at(idx)
+    [201, "Deleted"]
+  end
+
+  ########################################################
+
   get '/courses/:name' do |name|
     @page = name
     erb "courses/#{name}".to_sym
