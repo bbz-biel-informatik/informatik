@@ -43,7 +43,7 @@ class MyApp < Sinatra::Base
   get '/todos' do
     @@todos ||= []
     @todos = @@todos.sort_by(&:id)
-    erb "todos/index".to_sym
+    erb "todos/index".to_sym, layout: :simple
   end
 
   get '/todos/:id' do |id|
@@ -52,14 +52,14 @@ class MyApp < Sinatra::Base
     if @todo.nil?
       status 404
     end
-    erb "todos/show".to_sym
+    erb "todos/show".to_sym, layout: :simple
   end
 
   post '/todos' do
     @@todos ||= []
     @todo = OpenStruct.new(id: rand(9999), text: params[:text])
     @@todos << @todo
-    erb "todos/show".to_sym
+    erb "todos/show".to_sym, layout: :simple
   end
 
   put '/todos/:id' do |id|
@@ -69,7 +69,7 @@ class MyApp < Sinatra::Base
     idx = @@todos.index(old_todo)
     @@todos[idx] = @todo
     @todos = @@todos
-    erb "todos/show".to_sym
+    erb "todos/show".to_sym, layout: :simple
   end
 
   delete '/todos/:id' do |id|
