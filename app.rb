@@ -24,6 +24,18 @@ class MyApp < Sinatra::Base
     redirect '/courses/01_intro_zahlensysteme'
   end
 
+  get '/formtest1' do
+    [200, "Resultate für #{params[:search_term]}"]
+  end
+
+  post '/formtest2' do
+    if params[:password] == "asdfasdf"
+      [200, "Willkommen #{params[:username]}"]
+    else
+      [403, "Falsches Passwort"]
+    end
+  end
+
   get '/courses/:name' do |name|
     @page = name
     erb "courses/#{name}".to_sym
