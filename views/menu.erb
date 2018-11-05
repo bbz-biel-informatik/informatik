@@ -2,7 +2,7 @@
   pages = Dir.glob 'views/courses/*'
   pages.sort!
   pages.map! { |page| page.split('/').last.split('.').first }
-  pages = pages.first(2) + pages.last(1)
+  pages = pages.first(4) + pages.last(1)
 
   currentpage = request.path_info.split('/').last
 %>
