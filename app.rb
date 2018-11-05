@@ -18,8 +18,9 @@ class MyApp < Sinatra::Base
     '03_digilog_betriebssysteme' => 'Digitale Schaltungen & Betriebssysteme',
     '04_programmieren' => 'Programmieren',
     '05_datenbanken' => 'Datenbanken',
-    '50_bpi' => 'BPI',
-    '90_netzwerke' => 'Netzwerke'
+    '06_netzwerke' => 'Netzwerke',
+    '07_webprojekt' => 'Web-Projekt',
+    '50_bpi' => 'BPI'
   }
 
   get '/' do
