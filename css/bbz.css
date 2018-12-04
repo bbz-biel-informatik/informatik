@@ -1,0 +1,37 @@
+.list {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+.row.heading {
+  background-color: #333;
+  color: white;
+}
+
+.row.subheading {
+  background-color: #666;
+}
+
+.row.highlighted {
+  background-color: #EEE;
+}
+
+.list .row {
+  border-bottom: 1px solid #DDD;
+  text-align: left;
+  padding: 12px;
+}
+
+.row i {
+  margin-right: 12px;
+}
+
+.row h3 {
+  color: #FFF;
+}
+
+
+div.presentation {
+  content: 'pres';
+}
