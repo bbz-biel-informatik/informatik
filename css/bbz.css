@@ -9,10 +9,6 @@
   color: white;
 }
 
-.row.subheading {
-  background-color: #666;
-}
-
 .row.highlighted {
   background-color: #EEE;
 }
@@ -29,9 +25,4 @@
 
 .row h3 {
   color: #FFF;
-}
-
-
-div.presentation {
-  content: 'pres';
 }
