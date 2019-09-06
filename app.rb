@@ -16,6 +16,7 @@ class MyApp < Sinatra::Base
     '01_intro_zahlensysteme' => 'Einführung & Zahlensysteme',
     '02_hardware' => 'Hardware',
     '03_digilog_betriebssysteme' => 'Digitale Schaltungen & Betriebssysteme',
+    '045_php' => 'PHP',
     '04_programmieren' => 'Programmieren',
     '05_datenbanken' => 'Datenbanken',
     '06_netzwerke' => 'Netzwerke',
