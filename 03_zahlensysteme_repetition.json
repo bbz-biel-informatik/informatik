@@ -30,6 +30,19 @@
             }
           ]
         },
+                {
+          "text": "A4 (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "164"
+            },
+            {
+              "label": "(2)",
+              "solution": "10100100"
+            }
+          ]
+        },
         {
           "text": "AAA (16)",
           "answers": [
@@ -40,6 +53,58 @@
             {
               "label": "(2)",
               "solution": "101010101010"
+            }
+          ]
+        },
+        {
+          "text": "77D (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "1917"
+            },
+            {
+              "label": "(2)",
+              "solution": "11101111101"
+            }
+          ]
+        },
+        {
+          "text": "34 (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "52"
+            },
+            {
+              "label": "(2)",
+              "solution": "110100"
+            }
+          ]
+        },
+        {
+          "text": "CD (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "205"
+            },
+            {
+              "label": "(2)",
+              "solution": "11001101"
+            }
+          ]
+        },
+                {
+          "text": "F18 (16)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "3864"
+            },
+            {
+              "label": "(2)",
+              "solution": "111100011000"
             }
           ]
         },
@@ -83,6 +148,97 @@
           ]
         },
         {
+          "text": "1010111101 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "701"
+            },
+            {
+              "label": "(16)",
+              "solution": "2BD"
+            }
+          ]
+        },
+        {
+          "text": "11111101111 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "2031"
+            },
+            {
+              "label": "(16)",
+              "solution": "7EF"
+            }
+          ]
+        },
+        {
+          "text": "101101100 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "364"
+            },
+            {
+              "label": "(16)",
+              "solution": "16C"
+            }
+          ]
+        },
+        {
+          "text": "11110000 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "240"
+            },
+            {
+              "label": "(16)",
+              "solution": "F0"
+            }
+          ]
+        },
+        {
+          "text": "00101011 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "43"
+            },
+            {
+              "label": "(16)",
+              "solution": "2B"
+            }
+          ]
+        },
+        {
+          "text": "1011011011 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "731"
+            },
+            {
+              "label": "(16)",
+              "solution": "2DB"
+            }
+          ]
+        },
+        {
+          "text": "100100101 (2)",
+          "answers": [
+            {
+              "label": "(10)",
+              "solution": "293"
+            },
+            {
+              "label": "(16)",
+              "solution": "125"
+            }
+          ]
+        },
+        {
           "text": "185 (10)",
           "answers": [
             {
@@ -122,6 +278,84 @@
           ]
         },
         {
+          "text": "17 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "10001"
+            },
+            {
+              "label": "(16)",
+              "solution": "11"
+            }
+          ]
+        },
+        {
+          "text": "861 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1101011101"
+            },
+            {
+              "label": "(16)",
+              "solution": "35D"
+            }
+          ]
+        },
+        {
+          "text": "555 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1000101011"
+            },
+            {
+              "label": "(16)",
+              "solution": "22B"
+            }
+          ]
+        },
+        {
+          "text": "390 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "110000110"
+            },
+            {
+              "label": "(16)",
+              "solution": "186"
+            }
+          ]
+        },
+        {
+          "text": "91 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1011011"
+            },
+            {
+              "label": "(16)",
+              "solution": "5B"
+            }
+          ]
+        },
+        {
+          "text": "72 (10)",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1001000"
+            },
+            {
+              "label": "(16)",
+              "solution": "48"
+            }
+          ]
+        },
+        {
           "text": "1101011 + 10100",
           "answers": [
             {
@@ -145,6 +379,69 @@
             {
               "label": "(2)",
               "solution": "100001000"
+            }
+          ]
+        },
+        {
+          "text": "101110 + 1111",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "111101"
+            }
+          ]
+        },
+        {
+          "text": "1000100 + 01010",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1001110"
+            }
+          ]
+        },
+        {
+          "text": "110011 + 001101",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1000000"
+            }
+          ]
+        },
+        {
+          "text": "10101111 + 1110111",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "100100110"
+            }
+          ]
+        },
+        {
+          "text": "101011 + 11101",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1001000"
+            }
+          ]
+        },
+        {
+          "text": "10111011 + 1110111",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "100110010"
+            }
+          ]
+        },
+        {
+          "text": "11111 + 1110",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "101101"
             }
           ]
         },
@@ -176,29 +473,56 @@
           ]
         },
         {
-          "text": "1101111 - 10100",
+          "text": "11111 * 1110",
           "answers": [
             {
               "label": "(2)",
-              "solution": "1011011"
+              "solution": "110110010"
             }
           ]
         },
         {
-          "text": "11101011 - 1011",
+          "text": "10001 * 111",
           "answers": [
             {
               "label": "(2)",
-              "solution": "11100000"
+              "solution": "1110111"
             }
           ]
         },
         {
-          "text": "1001 - 101",
+          "text": "10110 * 10",
           "answers": [
             {
               "label": "(2)",
-              "solution": "100"
+              "solution": "101100"
+            }
+          ]
+        },
+        {
+          "text": "11100 * 011",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "01010100"
+            }
+          ]
+        },
+        {
+          "text": "101011 * 101",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "11010111"
+            }
+          ]
+        },
+        {
+          "text": "00110 * 10",
+          "answers": [
+            {
+              "label": "(2)",
+              "solution": "1100"
             }
           ]
         }
