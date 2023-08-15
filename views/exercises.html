@@ -37,6 +37,8 @@
     .question-text {
       font-weight: 700;
       width: 25%;
+      text-align: right;
+      padding-right: 1rem;
     }
 
     .answer {
@@ -85,7 +87,7 @@
 
               var topic_id = topic.id;
 
-              var $text = $('<div class="question-text">' + question.text + '</div>');
+              var $text = $('<div class="question-text">' + question.text.replace('+', '<br>+').replace('-', '<br>-').replace('*', '<br>*') + '</div>');
               $question.append($text);
 
               $.each(question.answers, function (k, answer) {
